@@ -3,9 +3,9 @@ use spin_sdk::http::{IncomingRequest, ResponseOutparam};
 use spin_sdk::http_component;
 
 #[http_component]
-async fn handle_{{crate_name}}(req: IncomingRequest, resp_out: ResponseOutparam) {
+async fn handle_ryan_spin_ssr(req: IncomingRequest, resp_out: ResponseOutparam) {
     let mut conf = leptos::get_configuration(None).await.unwrap();
-    conf.leptos_options.output_name = "{{crate_name}}".to_owned();
+    conf.leptos_options.output_name = "ryan_spin_ssr".to_owned();
 
     // Register server functions
     register_explicit::<crate::pages::home::GetCount>();
