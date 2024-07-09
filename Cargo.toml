@@ -46,7 +46,7 @@ ssr = [
 [package.metadata.leptos]
 # The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name
 output-name = "ryan_spin_ssr"
-tailwind-input-file = "styles/input.css"
+style-file = "public/main.css"
 bin-features = ["ssr"]
 bin-default-features = false
 lib-features = ["hydrate"]
